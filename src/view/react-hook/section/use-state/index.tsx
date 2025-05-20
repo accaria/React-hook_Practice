@@ -30,6 +30,7 @@ export default function UseState(){
         setTDLCount(prevDoneCount=>({
             ...prevDoneCount,toDoListDone:prevDoneCount.toDoListDone+1
         }));};
+    
     const handleDonelist =()=>{
         setTDLCount(prevDoneList=>({...prevDoneList,savedToDoList:prevDoneList.savedToDoList.slice(0,prevDoneList.savedToDoList.length-1)}));
     }

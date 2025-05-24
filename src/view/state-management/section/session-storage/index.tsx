@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function LocalStorage() {
+export default function SessionStorage() {
   const [token, setToken] = useState<string>("");
 
   return (
@@ -16,13 +16,13 @@ export default function LocalStorage() {
         />
         <button
           className="border border-black rounded-md p-2"
-          onClick={() => localStorage.setItem("token", token)}
+          onClick={() => sessionStorage.setItem("token", token)}
         >
           Submit
         </button>
         <button
           className="border border-black rounded-md p-2"
-          onClick={() => localStorage.removeItem("token")}
+          onClick={() => sessionStorage.removeItem("token")}
         >
           Remove
         </button>

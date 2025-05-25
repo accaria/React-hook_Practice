@@ -17,7 +17,6 @@ export async function signUpService(params: ISignUp) {
 export async function loginService(params: ILogin) {
   try {
     const { data } = await axios.get(
-      `https://friskykey-us.backendless.app/api/data/user?where=email%3D'${params.email}'%20and%20password%3D'${params.password}'`
       `https://calmingcheese-us.backendless.app/api/data/Users?where=email%3D'${params.email}'%20and%20password%3D'${params.password}'`
     );
 

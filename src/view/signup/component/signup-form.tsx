@@ -7,6 +7,7 @@ import Notification from "@/components/notification";
 import { ISignUp } from "@/interface/user.interface";
 import { signUpSchema } from "../schema";
 
+
 import { signUpService } from "@/service/auth.service";
 
 export default function SignUpForm() {
